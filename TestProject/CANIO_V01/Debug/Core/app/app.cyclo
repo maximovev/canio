@@ -1,0 +1,8 @@
+../Core/app/canio.h:71:2:CanIO::CanIO(uint32_t, uint32_t, uint32_t, uint32_t, CanIO_Array<unsigned char>*, CanIO_Array<unsigned char>*, void (*)(uint8_t, uint8_t, uint8_t*), void (*)(uint16_t, uint16_t, uint32_t))	1
+../Core/app/canio.h:84:7:bool CanIO::init(uint32_t, uint32_t, uint32_t, uint32_t, CanIO_Array<unsigned char>*, CanIO_Array<unsigned char>*, void (*)(uint8_t, uint8_t, uint8_t*), void (*)(uint16_t, uint16_t, uint32_t))	1
+../Core/app/app.cpp:32:6:void SendCanMessage(uint8_t, uint8_t, uint8_t*)	1
+../Core/app/app.cpp:37:6:void CANIOParseAnswer(uint16_t, uint16_t, uint32_t)	1
+../Core/app/app.cpp:42:6:void app()	1
+../Core/app/canio.h:26:2:CanIO_Array<ClassType>::CanIO_Array(ClassType*, uint32_t) [with ClassType = unsigned char]	1
+../Core/app/app.cpp:46:1:void __static_initialization_and_destruction_0()	1
+../Core/app/app.cpp:46:1:cpp)	1
