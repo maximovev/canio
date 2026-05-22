@@ -11,7 +11,7 @@
 #include "settings.h"
 #include "canio.h"
 
-
+using namespace maxssau;
 
 uint8_t	_rx_buff[CANIO_RX_BUFF_SIZE];
 uint8_t	_tx_buff[CANIO_TX_BUFF_SIZE];

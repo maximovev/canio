@@ -85,8 +85,8 @@ all: main-build
 main-build: CANIO_V01.elf secondary-outputs
 
 # Tool invocations
-CANIO_V01.elf CANIO_V01.map: $(OBJS) $(USER_OBJS) C:\Projects\git\barbell\CANIO_V01\STM32F107VCTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "CANIO_V01.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Projects\git\barbell\CANIO_V01\STM32F107VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CANIO_V01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+CANIO_V01.elf CANIO_V01.map: $(OBJS) $(USER_OBJS) C:\Projects\home\CANIO\TestProject\CANIO_V01\STM32F107VCTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "CANIO_V01.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Projects\home\CANIO\TestProject\CANIO_V01\STM32F107VCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CANIO_V01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
